@@ -1,0 +1,6 @@
+framework module Pods_GeoBork {
+  umbrella header "Pods-GeoBork-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_GeoBorkUITests {
+  umbrella header "Pods-GeoBorkUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
