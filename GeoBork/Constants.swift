@@ -21,6 +21,6 @@ struct Constants {
     
     struct LocationData {
         static let distanceFilter = 1
-        static let zoom:Float = 15
+        static let zoom:Float = 17
     }
 }

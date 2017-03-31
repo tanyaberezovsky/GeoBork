@@ -15,11 +15,12 @@
 		23A17BAA1E2D70F2008005E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A17BA81E2D70F2008005E7 /* LaunchScreen.storyboard */; };
 		23A17BB51E2D70F2008005E7 /* GeoBorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A17BB41E2D70F2008005E7 /* GeoBorkTests.swift */; };
 		23A17BC01E2D70F2008005E7 /* GeoBorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A17BBF1E2D70F2008005E7 /* GeoBorkUITests.swift */; };
+		23A5531D1E89921500002134 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5531C1E89921500002134 /* LocationService.swift */; };
+		23A5531F1E89932F00002134 /* LocationSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5531E1E89932F00002134 /* LocationSelectorViewController.swift */; };
+		23A553251E8AD3F600002134 /* ElementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A553241E8AD3F600002134 /* ElementCollectionViewCell.swift */; };
+		23A553271E8AD44900002134 /* ElementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A553261E8AD44900002134 /* ElementsViewController.swift */; };
+		23A5532A1E8AE21F00002134 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A553291E8AE21F00002134 /* Elements.swift */; };
 		23B1AD6B1E2E069C003DED2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1AD6A1E2E069C003DED2A /* Constants.swift */; };
-		23B1AD991E2E11C2003DED2A /* Azimuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1AD951E2E11C2003DED2A /* Azimuth.swift */; };
-		23B1AD9A1E2E11C2003DED2A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1AD961E2E11C2003DED2A /* Location.swift */; };
-		23B1AD9B1E2E11C2003DED2A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1AD971E2E11C2003DED2A /* LocationManager.swift */; };
-		23B1AD9C1E2E11C2003DED2A /* ToggleZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1AD981E2E11C2003DED2A /* ToggleZoom.swift */; };
 		23B1AD9E1E2E15F1003DED2A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1AD9D1E2E15F1003DED2A /* MapViewController.swift */; };
 		B3D32BAA798D6FA0415AD824 /* Pods_GeoBork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44D18B493AEF8AD6D6A03B9 /* Pods_GeoBork.framework */; };
 /* End PBXBuildFile section */
@@ -56,11 +57,12 @@
 		23A17BBB1E2D70F2008005E7 /* GeoBorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoBorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A17BBF1E2D70F2008005E7 /* GeoBorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoBorkUITests.swift; sourceTree = "<group>"; };
 		23A17BC11E2D70F2008005E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A5531C1E89921500002134 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		23A5531E1E89932F00002134 /* LocationSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSelectorViewController.swift; sourceTree = "<group>"; };
+		23A553241E8AD3F600002134 /* ElementCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementCollectionViewCell.swift; sourceTree = "<group>"; };
+		23A553261E8AD44900002134 /* ElementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementsViewController.swift; sourceTree = "<group>"; };
+		23A553291E8AE21F00002134 /* Elements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
 		23B1AD6A1E2E069C003DED2A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		23B1AD951E2E11C2003DED2A /* Azimuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Azimuth.swift; path = GeoNavigation/Azimuth.swift; sourceTree = "<group>"; };
-		23B1AD961E2E11C2003DED2A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = GeoNavigation/Location.swift; sourceTree = "<group>"; };
-		23B1AD971E2E11C2003DED2A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = GeoNavigation/LocationManager.swift; sourceTree = "<group>"; };
-		23B1AD981E2E11C2003DED2A /* ToggleZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToggleZoom.swift; path = GeoNavigation/ToggleZoom.swift; sourceTree = "<group>"; };
 		23B1AD9D1E2E15F1003DED2A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2C291B0B1EB86E68919583F3 /* Pods-GeoBorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoBorkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoBorkTests/Pods-GeoBorkTests.release.xcconfig"; sourceTree = "<group>"; };
 		604CC764C746E620F2DFD8DB /* Pods-GeoBorkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoBorkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoBorkTests/Pods-GeoBorkTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,12 +126,12 @@
 		23A17B9E1E2D70F2008005E7 /* GeoBork */ = {
 			isa = PBXGroup;
 			children = (
+				23A553281E8AE18F00002134 /* Model */,
 				23B1AD9F1E2E2D29003DED2A /* Views */,
 				23B1AD941E2E11A7003DED2A /* GeoNavigation */,
 				23B1AD931E2E0F91003DED2A /* Controlers */,
 				23B1AD691E2E0684003DED2A /* Constants */,
 				23A17B9F1E2D70F2008005E7 /* AppDelegate.swift */,
-				23A17BA31E2D70F2008005E7 /* Main.storyboard */,
 				23A17BA61E2D70F2008005E7 /* Assets.xcassets */,
 				23A17BA81E2D70F2008005E7 /* LaunchScreen.storyboard */,
 				23A17BAB1E2D70F2008005E7 /* Info.plist */,
@@ -155,6 +157,14 @@
 			path = GeoBorkUITests;
 			sourceTree = "<group>";
 		};
+		23A553281E8AE18F00002134 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23A553291E8AE21F00002134 /* Elements.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		23B1AD691E2E0684003DED2A /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				23B1AD9D1E2E15F1003DED2A /* MapViewController.swift */,
+				23A5531E1E89932F00002134 /* LocationSelectorViewController.swift */,
+				23A553241E8AD3F600002134 /* ElementCollectionViewCell.swift */,
+				23A553261E8AD44900002134 /* ElementsViewController.swift */,
 			);
 			name = Controlers;
 			sourceTree = "<group>";
@@ -174,10 +187,7 @@
 		23B1AD941E2E11A7003DED2A /* GeoNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				23B1AD951E2E11C2003DED2A /* Azimuth.swift */,
-				23B1AD961E2E11C2003DED2A /* Location.swift */,
-				23B1AD971E2E11C2003DED2A /* LocationManager.swift */,
-				23B1AD981E2E11C2003DED2A /* ToggleZoom.swift */,
+				23A5531C1E89921500002134 /* LocationService.swift */,
 			);
 			name = GeoNavigation;
 			sourceTree = "<group>";
@@ -185,6 +195,7 @@
 		23B1AD9F1E2E2D29003DED2A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				23A17BA31E2D70F2008005E7 /* Main.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -496,13 +507,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B1AD9C1E2E11C2003DED2A /* ToggleZoom.swift in Sources */,
 				23A17BA01E2D70F2008005E7 /* AppDelegate.swift in Sources */,
-				23B1AD9B1E2E11C2003DED2A /* LocationManager.swift in Sources */,
-				23B1AD9A1E2E11C2003DED2A /* Location.swift in Sources */,
-				23B1AD991E2E11C2003DED2A /* Azimuth.swift in Sources */,
+				23A553251E8AD3F600002134 /* ElementCollectionViewCell.swift in Sources */,
 				23B1AD6B1E2E069C003DED2A /* Constants.swift in Sources */,
+				23A553271E8AD44900002134 /* ElementsViewController.swift in Sources */,
+				23A5531D1E89921500002134 /* LocationService.swift in Sources */,
+				23A5532A1E8AE21F00002134 /* Elements.swift in Sources */,
 				23B1AD9E1E2E15F1003DED2A /* MapViewController.swift in Sources */,
+				23A5531F1E89932F00002134 /* LocationSelectorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,60 +7,166 @@
 //
 
 import UIKit
-
 import GoogleMaps
 
+
+protocol LayoutConstraintProtocol{
+
+}
+
+protocol UIDefinitionProtocol{
+    func LoadMapsComponents()
+    func LoadGeneralComponents()
+}
+
+
+protocol MapActionsProtocol {
+    func addMarker(location: CLLocation)
+    func setMapCamera(location: CLLocation)
+}
 /*
  *  MapViewController
  *
  *  controls google map actions and functionality
  */
+
+import UIKit
+import GoogleMaps
+
+
 class MapViewController: UIViewController {
     
-    var mapView: GMSMapView?
-    var marker = GMSMarker()
+    //MARK:properties
+    @IBOutlet weak var mapView: GMSMapView!
     
+    var newLocation:CLLocation!
     
-    //define mapView layout
-    var constraints:  [NSLayoutConstraint]  {
-        if let mapView = self.mapView {
-            return [
-                mapView.topAnchor.constraint(equalTo: view.topAnchor),
-                mapView.leftAnchor.constraint(equalTo: view.leftAnchor),
-                mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-                mapView.rightAnchor.constraint(equalTo: view.rightAnchor)
-            ]
-        } else {
-            return [NSLayoutConstraint]()
-        }
+    var locationService: LocationService{
+        
+        return LocationService.sharedInstance
+        
     }
     
-    //MARK:Controler functions
+    
+    
+    //MARK: UIViewController FunctionssharedInstance
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
+        setAppearance()
+        
+        defineGoogleMap()
+        
+        setLocationService()
+        
+        self.locationService.startUpdatingLocation()
+    }
+    
+    
+    
+    //MARK: Help General Functions
+    
+    private func setAppearance(){
+        
+        translateScreenCaptions()
+        
+    }
+    
+    
+    
+    private func defineGoogleMap(){
+        
+        self.mapView.delegate = self
+        
+    }
+    
+    private func setLocationService(){
+        
+        _ = LocationService.sharedInstance//start location manager
+        
+        LocationService.sharedInstance.myDelegate = self
+        
+    }
+    
+    
+    
+    //MARK: Help UI Functions
+    
+    private func roundUIElementConers(){
+        
+    //    btnContinue.layer.cornerRadius = 6
+        
+    }
+    
+    private func translateScreenCaptions(){
+        
+        //btnContinue.setTitle(NSLocalizedString("CONTINUEWITHCURRENLOCATION", comment: ""), for: .normal)
+        
+    }
+    
+}
+
+
+
+extension MapViewController: LocationServiceDelegate{
+    
+    //MARK: LocationServiceDelegate
+    
+    func tracingLocation(location: CLLocation){
+        
+        self.locationService.stopUpdatingLocation()
+        
+        setMapCamera(location: location)
+        
+    }
+    
+    
+    
+}
+
+//MARK:GMSMapViewDelegate functions
+
+extension MapViewController: GMSMapViewDelegate{
+    
+    func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
+        
+        newLocation = CLLocation(latitude: position.target.latitude, longitude: position.target.longitude)
+        
+    }
+    
+    func setMapCamera(location: CLLocation){
+        mapView.camera =  GMSCameraPosition.camera(withLatitude: location.coordinate.latitude, longitude: location.coordinate.longitude, zoom: Constants.LocationData.zoom)
+        
+    }
+}
+
+
+
+
+extension MapViewController: UIDefinitionProtocol {
+    internal func LoadGeneralComponents() {
+        
+    }
+
+    
+    func LoadMapsComponents(){
         let camera = GMSCameraPosition.camera(withLatitude: 0,
                                               longitude: 0,
                                               zoom: 14)
         mapView = GMSMapView.map(withFrame: self.view.bounds, camera: camera)
         
-        if let mapView = self.mapView {
-            mapView.translatesAutoresizingMaskIntoConstraints = false
-            mapView.isMyLocationEnabled = false
-            mapView.settings.zoomGestures = false
-            self.view.insertSubview(mapView, at: 0)
-        }
-        NSLayoutConstraint.activate(constraints)//set auto layout for google mapView
-      
-        _ = LocationManager.shared//start location manager
-        LocationManager.shared.myDelegate = self
-
+     
+        
     }
-    
+ 
 }
 
+
+/*
 //MARK: Actions on map
-extension MapViewController{
+extension MapViewController: MapActionsProtocol{
     
     //Creates a marker in the center of the map.
     func addMarker(location: CLLocation){
@@ -78,12 +184,4 @@ extension MapViewController{
 
 }
 
-
-extension MapViewController: LocationManagerDelegate{
-    //MARK: LocationManagerDelegate
-    func UpdateLocations(location: CLLocation){
-        setMapCamera(location: location)
-        addMarker(location: location)
-    }
-    
-}
+*/
