@@ -21,13 +21,19 @@ class LocationSelectorViewController: UIViewController {
     
     var newLocation:CLLocation!
     
-    var locationService: LocationService{
+    
+    var _locationService: LocationService?/*{
         
         return LocationService.sharedInstance
         
+    }*/
+    var locationService: LocationService{
+        if _locationService == nil{
+            _locationService = LocationService()
+        }
+        return _locationService!
     }
-    
-    //MARK: UIViewController FunctionssharedInstance
+    // bMARK: UIViewController FunctionssharedInstance
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -60,9 +66,10 @@ class LocationSelectorViewController: UIViewController {
     
     private func setLocationService(){
         
-        _ = LocationService.sharedInstance//start location manager
+       // LocationService.sharedInstance//start location manager
         
-        LocationService.sharedInstance.myDelegate = self
+        //LocationService.sharedInstance.myDelegate = self
+        locationService.myDelegate = self
         
     }
     

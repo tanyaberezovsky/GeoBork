@@ -41,12 +41,17 @@ class MapViewController: UIViewController {
     
     var newLocation:CLLocation!
     
+    var _locationService: LocationService?/*{
+     
+     return LocationService.sharedInstance
+     
+     }*/
     var locationService: LocationService{
-        
-        return LocationService.sharedInstance
-        
+        if _locationService == nil{
+            _locationService = LocationService()
+        }
+        return _locationService!
     }
-    
     
     
     //MARK: UIViewController FunctionssharedInstance
@@ -69,12 +74,12 @@ class MapViewController: UIViewController {
     //MARK: Help General Functions
     
     private func setAppearance(){
-        
         translateScreenCaptions()
-        
     }
     
-    
+    private func translateScreenCaptions(){
+        //btnContinue.setTitle(NSLocalizedString("CONTINUEWITHCURRENLOCATION", comment: ""), for: .normal)
+    }
     
     private func defineGoogleMap(){
         
@@ -84,10 +89,11 @@ class MapViewController: UIViewController {
     
     private func setLocationService(){
         
-        _ = LocationService.sharedInstance//start location manager
+        // LocationService.sharedInstance//start location manager
         
-        LocationService.sharedInstance.myDelegate = self
-        
+        //LocationService.sharedInstance.myDelegate = self
+        locationService.myDelegate = self
+     
     }
     
     
@@ -100,11 +106,7 @@ class MapViewController: UIViewController {
         
     }
     
-    private func translateScreenCaptions(){
-        
-        //btnContinue.setTitle(NSLocalizedString("CONTINUEWITHCURRENLOCATION", comment: ""), for: .normal)
-        
-    }
+  
     
 }
 
@@ -116,8 +118,8 @@ extension MapViewController: LocationServiceDelegate{
     
     func tracingLocation(location: CLLocation){
         
-        self.locationService.stopUpdatingLocation()
-        
+      self.locationService.stopUpdatingLocation()
+      print("tracingLocation")
         setMapCamera(location: location)
         
     }
