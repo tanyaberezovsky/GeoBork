@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0002F2C2BD0AB656DFE3E151 /* Pods_GeoBorkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0263633A3F2A1C9030F80DC /* Pods_GeoBorkUITests.framework */; };
+		022E1E3DC2BEE6A4E4CEA077 /* Pods_GeoBorkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8733D5DF8F226CE31891EACA /* Pods_GeoBorkTests.framework */; };
+		23A17BA01E2D70F2008005E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A17B9F1E2D70F2008005E7 /* AppDelegate.swift */; };
+		23A17BA51E2D70F2008005E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A17BA31E2D70F2008005E7 /* Main.storyboard */; };
+		23A17BA71E2D70F2008005E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A17BA61E2D70F2008005E7 /* Assets.xcassets */; };
+		23A17BAA1E2D70F2008005E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A17BA81E2D70F2008005E7 /* LaunchScreen.storyboard */; };
+		23A17BB51E2D70F2008005E7 /* GeoBorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A17BB41E2D70F2008005E7 /* GeoBorkTests.swift */; };
+		23A17BC01E2D70F2008005E7 /* GeoBorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A17BBF1E2D70F2008005E7 /* GeoBorkUITests.swift */; };
+		23A5531D1E89921500002134 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5531C1E89921500002134 /* LocationService.swift */; };
+		23A5531F1E89932F00002134 /* LocationSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5531E1E89932F00002134 /* LocationSelectorViewController.swift */; };
+		23A553251E8AD3F600002134 /* ElementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A553241E8AD3F600002134 /* ElementCollectionViewCell.swift */; };
+		23A553271E8AD44900002134 /* ElementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A553261E8AD44900002134 /* ElementsViewController.swift */; };
+		23A5532A1E8AE21F00002134 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A553291E8AE21F00002134 /* Elements.swift */; };
+		23A5532C1E8ED7E300002134 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5532B1E8ED7E300002134 /* LocationManager.swift */; };
+		23B1AD6B1E2E069C003DED2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1AD6A1E2E069C003DED2A /* Constants.swift */; };
+		23B1AD9E1E2E15F1003DED2A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1AD9D1E2E15F1003DED2A /* MapViewController.swift */; };
+		B3D32BAA798D6FA0415AD824 /* Pods_GeoBork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44D18B493AEF8AD6D6A03B9 /* Pods_GeoBork.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23A17BB11E2D70F2008005E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23A17B941E2D70F2008005E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23A17B9B1E2D70F2008005E7;
+			remoteInfo = GeoBork;
+		};
+		23A17BBC1E2D70F2008005E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23A17B941E2D70F2008005E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23A17B9B1E2D70F2008005E7;
+			remoteInfo = GeoBork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A747F1AA71EE9A587FF269 /* Pods-GeoBorkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoBorkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoBorkUITests/Pods-GeoBorkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0FCD00133C48A7366B2D45A8 /* Pods-GeoBork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoBork.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoBork/Pods-GeoBork.release.xcconfig"; sourceTree = "<group>"; };
+		23A17B9C1E2D70F2008005E7 /* GeoBork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoBork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A17B9F1E2D70F2008005E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23A17BA41E2D70F2008005E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23A17BA61E2D70F2008005E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23A17BA91E2D70F2008005E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23A17BAB1E2D70F2008005E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A17BB01E2D70F2008005E7 /* GeoBorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoBorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A17BB41E2D70F2008005E7 /* GeoBorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoBorkTests.swift; sourceTree = "<group>"; };
+		23A17BB61E2D70F2008005E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A17BBB1E2D70F2008005E7 /* GeoBorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoBorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A17BBF1E2D70F2008005E7 /* GeoBorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoBorkUITests.swift; sourceTree = "<group>"; };
+		23A17BC11E2D70F2008005E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A5531C1E89921500002134 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		23A5531E1E89932F00002134 /* LocationSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSelectorViewController.swift; sourceTree = "<group>"; };
+		23A553241E8AD3F600002134 /* ElementCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementCollectionViewCell.swift; sourceTree = "<group>"; };
+		23A553261E8AD44900002134 /* ElementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementsViewController.swift; sourceTree = "<group>"; };
+		23A553291E8AE21F00002134 /* Elements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
+		23A5532B1E8ED7E300002134 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		23B1AD6A1E2E069C003DED2A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		23B1AD9D1E2E15F1003DED2A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2C291B0B1EB86E68919583F3 /* Pods-GeoBorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoBorkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoBorkTests/Pods-GeoBorkTests.release.xcconfig"; sourceTree = "<group>"; };
+		604CC764C746E620F2DFD8DB /* Pods-GeoBorkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoBorkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoBorkTests/Pods-GeoBorkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6662A3C54D59D28EF08CEC36 /* Pods-GeoBorkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoBorkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoBorkUITests/Pods-GeoBorkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		83A78CBD3B2EC033BD185AA2 /* Pods-GeoBork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoBork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoBork/Pods-GeoBork.debug.xcconfig"; sourceTree = "<group>"; };
+		8733D5DF8F226CE31891EACA /* Pods_GeoBorkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoBorkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0263633A3F2A1C9030F80DC /* Pods_GeoBorkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoBorkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44D18B493AEF8AD6D6A03B9 /* Pods_GeoBork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoBork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23A17B991E2D70F2008005E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D32BAA798D6FA0415AD824 /* Pods_GeoBork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A17BAD1E2D70F2008005E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022E1E3DC2BEE6A4E4CEA077 /* Pods_GeoBorkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A17BB81E2D70F2008005E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0002F2C2BD0AB656DFE3E151 /* Pods_GeoBorkUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23A17B931E2D70F2008005E7 = {
+			isa = PBXGroup;
+			children = (
+				23A17B9E1E2D70F2008005E7 /* GeoBork */,
+				23A17BB31E2D70F2008005E7 /* GeoBorkTests */,
+				23A17BBE1E2D70F2008005E7 /* GeoBorkUITests */,
+				23A17B9D1E2D70F2008005E7 /* Products */,
+				93EDF671C36AEBCE9141EF95 /* Pods */,
+				B94ACDBC1FFCA45A5280A3E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		23A17B9D1E2D70F2008005E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23A17B9C1E2D70F2008005E7 /* GeoBork.app */,
+				23A17BB01E2D70F2008005E7 /* GeoBorkTests.xctest */,
+				23A17BBB1E2D70F2008005E7 /* GeoBorkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23A17B9E1E2D70F2008005E7 /* GeoBork */ = {
+			isa = PBXGroup;
+			children = (
+				23A553281E8AE18F00002134 /* Model */,
+				23B1AD9F1E2E2D29003DED2A /* Views */,
+				23B1AD941E2E11A7003DED2A /* GeoNavigation */,
+				23B1AD931E2E0F91003DED2A /* Controlers */,
+				23B1AD691E2E0684003DED2A /* Constants */,
+				23A17B9F1E2D70F2008005E7 /* AppDelegate.swift */,
+				23A17BA61E2D70F2008005E7 /* Assets.xcassets */,
+				23A17BA81E2D70F2008005E7 /* LaunchScreen.storyboard */,
+				23A17BAB1E2D70F2008005E7 /* Info.plist */,
+			);
+			path = GeoBork;
+			sourceTree = "<group>";
+		};
+		23A17BB31E2D70F2008005E7 /* GeoBorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				23A17BB41E2D70F2008005E7 /* GeoBorkTests.swift */,
+				23A17BB61E2D70F2008005E7 /* Info.plist */,
+			);
+			path = GeoBorkTests;
+			sourceTree = "<group>";
+		};
+		23A17BBE1E2D70F2008005E7 /* GeoBorkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23A17BBF1E2D70F2008005E7 /* GeoBorkUITests.swift */,
+				23A17BC11E2D70F2008005E7 /* Info.plist */,
+			);
+			path = GeoBorkUITests;
+			sourceTree = "<group>";
+		};
+		23A553281E8AE18F00002134 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23A553291E8AE21F00002134 /* Elements.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		23B1AD691E2E0684003DED2A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				23B1AD6A1E2E069C003DED2A /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		23B1AD931E2E0F91003DED2A /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				23B1AD9D1E2E15F1003DED2A /* MapViewController.swift */,
+				23A5531E1E89932F00002134 /* LocationSelectorViewController.swift */,
+				23A553241E8AD3F600002134 /* ElementCollectionViewCell.swift */,
+				23A553261E8AD44900002134 /* ElementsViewController.swift */,
+			);
+			name = Controlers;
+			sourceTree = "<group>";
+		};
+		23B1AD941E2E11A7003DED2A /* GeoNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				23A5531C1E89921500002134 /* LocationService.swift */,
+				23A5532B1E8ED7E300002134 /* LocationManager.swift */,
+			);
+			name = GeoNavigation;
+			sourceTree = "<group>";
+		};
+		23B1AD9F1E2E2D29003DED2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23A17BA31E2D70F2008005E7 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		93EDF671C36AEBCE9141EF95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83A78CBD3B2EC033BD185AA2 /* Pods-GeoBork.debug.xcconfig */,
+				0FCD00133C48A7366B2D45A8 /* Pods-GeoBork.release.xcconfig */,
+				604CC764C746E620F2DFD8DB /* Pods-GeoBorkTests.debug.xcconfig */,
+				2C291B0B1EB86E68919583F3 /* Pods-GeoBorkTests.release.xcconfig */,
+				6662A3C54D59D28EF08CEC36 /* Pods-GeoBorkUITests.debug.xcconfig */,
+				01A747F1AA71EE9A587FF269 /* Pods-GeoBorkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B94ACDBC1FFCA45A5280A3E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F44D18B493AEF8AD6D6A03B9 /* Pods_GeoBork.framework */,
+				8733D5DF8F226CE31891EACA /* Pods_GeoBorkTests.framework */,
+				F0263633A3F2A1C9030F80DC /* Pods_GeoBorkUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23A17B9B1E2D70F2008005E7 /* GeoBork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A17BC41E2D70F2008005E7 /* Build configuration list for PBXNativeTarget "GeoBork" */;
+			buildPhases = (
+				7D655B77E4D840F35E23D328 /* [CP] Check Pods Manifest.lock */,
+				23A17B981E2D70F2008005E7 /* Sources */,
+				23A17B991E2D70F2008005E7 /* Frameworks */,
+				23A17B9A1E2D70F2008005E7 /* Resources */,
+				8D8F3822A92F7DB6C9EDC768 /* [CP] Embed Pods Frameworks */,
+				DA0BA3A6D6B836495CAA0985 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoBork;
+			productName = GeoBork;
+			productReference = 23A17B9C1E2D70F2008005E7 /* GeoBork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23A17BAF1E2D70F2008005E7 /* GeoBorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A17BC71E2D70F2008005E7 /* Build configuration list for PBXNativeTarget "GeoBorkTests" */;
+			buildPhases = (
+				EDF264D601A9B5AA79A3EA03 /* [CP] Check Pods Manifest.lock */,
+				23A17BAC1E2D70F2008005E7 /* Sources */,
+				23A17BAD1E2D70F2008005E7 /* Frameworks */,
+				23A17BAE1E2D70F2008005E7 /* Resources */,
+				CC25D83E9F4F52ED9B1A7878 /* [CP] Embed Pods Frameworks */,
+				E94B2037440463CA09D46865 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23A17BB21E2D70F2008005E7 /* PBXTargetDependency */,
+			);
+			name = GeoBorkTests;
+			productName = GeoBorkTests;
+			productReference = 23A17BB01E2D70F2008005E7 /* GeoBorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23A17BBA1E2D70F2008005E7 /* GeoBorkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A17BCA1E2D70F2008005E7 /* Build configuration list for PBXNativeTarget "GeoBorkUITests" */;
+			buildPhases = (
+				DB57842FC4B9A76F5B7B03D3 /* [CP] Check Pods Manifest.lock */,
+				23A17BB71E2D70F2008005E7 /* Sources */,
+				23A17BB81E2D70F2008005E7 /* Frameworks */,
+				23A17BB91E2D70F2008005E7 /* Resources */,
+				0E2AC93D8C810B3E5752394F /* [CP] Embed Pods Frameworks */,
+				E54CDE3C24533E14BB5B3C2C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23A17BBD1E2D70F2008005E7 /* PBXTargetDependency */,
+			);
+			name = GeoBorkUITests;
+			productName = GeoBorkUITests;
+			productReference = 23A17BBB1E2D70F2008005E7 /* GeoBorkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23A17B941E2D70F2008005E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Tania Berezovski";
+				TargetAttributes = {
+					23A17B9B1E2D70F2008005E7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TK89P5DV7E;
+						ProvisioningStyle = Automatic;
+					};
+					23A17BAF1E2D70F2008005E7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HS2EBXX3A9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 23A17B9B1E2D70F2008005E7;
+					};
+					23A17BBA1E2D70F2008005E7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HS2EBXX3A9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 23A17B9B1E2D70F2008005E7;
+					};
+				};
+			};
+			buildConfigurationList = 23A17B971E2D70F2008005E7 /* Build configuration list for PBXProject "GeoBork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23A17B931E2D70F2008005E7;
+			productRefGroup = 23A17B9D1E2D70F2008005E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23A17B9B1E2D70F2008005E7 /* GeoBork */,
+				23A17BAF1E2D70F2008005E7 /* GeoBorkTests */,
+				23A17BBA1E2D70F2008005E7 /* GeoBorkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23A17B9A1E2D70F2008005E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A17BAA1E2D70F2008005E7 /* LaunchScreen.storyboard in Resources */,
+				23A17BA71E2D70F2008005E7 /* Assets.xcassets in Resources */,
+				23A17BA51E2D70F2008005E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A17BAE1E2D70F2008005E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A17BB91E2D70F2008005E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E2AC93D8C810B3E5752394F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoBorkUITests/Pods-GeoBorkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D655B77E4D840F35E23D328 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D8F3822A92F7DB6C9EDC768 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoBork/Pods-GeoBork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC25D83E9F4F52ED9B1A7878 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoBorkTests/Pods-GeoBorkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA0BA3A6D6B836495CAA0985 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoBork/Pods-GeoBork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB57842FC4B9A76F5B7B03D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E54CDE3C24533E14BB5B3C2C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoBorkUITests/Pods-GeoBorkUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E94B2037440463CA09D46865 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoBorkTests/Pods-GeoBorkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDF264D601A9B5AA79A3EA03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23A17B981E2D70F2008005E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A17BA01E2D70F2008005E7 /* AppDelegate.swift in Sources */,
+				23A553251E8AD3F600002134 /* ElementCollectionViewCell.swift in Sources */,
+				23B1AD6B1E2E069C003DED2A /* Constants.swift in Sources */,
+				23A553271E8AD44900002134 /* ElementsViewController.swift in Sources */,
+				23A5531D1E89921500002134 /* LocationService.swift in Sources */,
+				23A5532A1E8AE21F00002134 /* Elements.swift in Sources */,
+				23B1AD9E1E2E15F1003DED2A /* MapViewController.swift in Sources */,
+				23A5531F1E89932F00002134 /* LocationSelectorViewController.swift in Sources */,
+				23A5532C1E8ED7E300002134 /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A17BAC1E2D70F2008005E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A17BB51E2D70F2008005E7 /* GeoBorkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A17BB71E2D70F2008005E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A17BC01E2D70F2008005E7 /* GeoBorkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23A17BB21E2D70F2008005E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23A17B9B1E2D70F2008005E7 /* GeoBork */;
+			targetProxy = 23A17BB11E2D70F2008005E7 /* PBXContainerItemProxy */;
+		};
+		23A17BBD1E2D70F2008005E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23A17B9B1E2D70F2008005E7 /* GeoBork */;
+			targetProxy = 23A17BBC1E2D70F2008005E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23A17BA31E2D70F2008005E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23A17BA41E2D70F2008005E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23A17BA81E2D70F2008005E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23A17BA91E2D70F2008005E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23A17BC21E2D70F2008005E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23A17BC31E2D70F2008005E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23A17BC51E2D70F2008005E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83A78CBD3B2EC033BD185AA2 /* Pods-GeoBork.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TK89P5DV7E;
+				INFOPLIST_FILE = GeoBork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = krote.dom.tania.GeoBork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		23A17BC61E2D70F2008005E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FCD00133C48A7366B2D45A8 /* Pods-GeoBork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TK89P5DV7E;
+				INFOPLIST_FILE = GeoBork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = krote.dom.tania.GeoBork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		23A17BC81E2D70F2008005E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 604CC764C746E620F2DFD8DB /* Pods-GeoBorkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HS2EBXX3A9;
+				INFOPLIST_FILE = GeoBorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = krote.dom.tania.GeoBorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoBork.app/GeoBork";
+			};
+			name = Debug;
+		};
+		23A17BC91E2D70F2008005E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C291B0B1EB86E68919583F3 /* Pods-GeoBorkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HS2EBXX3A9;
+				INFOPLIST_FILE = GeoBorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = krote.dom.tania.GeoBorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoBork.app/GeoBork";
+			};
+			name = Release;
+		};
+		23A17BCB1E2D70F2008005E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6662A3C54D59D28EF08CEC36 /* Pods-GeoBorkUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HS2EBXX3A9;
+				INFOPLIST_FILE = GeoBorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = krote.dom.tania.GeoBorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GeoBork;
+			};
+			name = Debug;
+		};
+		23A17BCC1E2D70F2008005E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01A747F1AA71EE9A587FF269 /* Pods-GeoBorkUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HS2EBXX3A9;
+				INFOPLIST_FILE = GeoBorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = krote.dom.tania.GeoBorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GeoBork;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23A17B971E2D70F2008005E7 /* Build configuration list for PBXProject "GeoBork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A17BC21E2D70F2008005E7 /* Debug */,
+				23A17BC31E2D70F2008005E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A17BC41E2D70F2008005E7 /* Build configuration list for PBXNativeTarget "GeoBork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A17BC51E2D70F2008005E7 /* Debug */,
+				23A17BC61E2D70F2008005E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A17BC71E2D70F2008005E7 /* Build configuration list for PBXNativeTarget "GeoBorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A17BC81E2D70F2008005E7 /* Debug */,
+				23A17BC91E2D70F2008005E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A17BCA1E2D70F2008005E7 /* Build configuration list for PBXNativeTarget "GeoBorkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A17BCB1E2D70F2008005E7 /* Debug */,
+				23A17BCC1E2D70F2008005E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23A17B941E2D70F2008005E7 /* Project object */;
+}
