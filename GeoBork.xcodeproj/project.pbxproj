@@ -303,7 +303,7 @@
 				TargetAttributes = {
 					23A17B9B1E2D70F2008005E7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = HS2EBXX3A9;
+						DevelopmentTeam = TK89P5DV7E;
 						ProvisioningStyle = Automatic;
 					};
 					23A17BAF1E2D70F2008005E7 = {
@@ -672,7 +672,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = HS2EBXX3A9;
+				DEVELOPMENT_TEAM = TK89P5DV7E;
 				INFOPLIST_FILE = GeoBork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = krote.dom.tania.GeoBork;
@@ -687,7 +687,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = HS2EBXX3A9;
+				DEVELOPMENT_TEAM = TK89P5DV7E;
 				INFOPLIST_FILE = GeoBork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = krote.dom.tania.GeoBork;
