@@ -88,7 +88,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="139" height="143"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inspectorbig" translatesAutoresizingMaskIntoConstraints="NO" id="wzN-fp-4yk">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="wzN-fp-4yk">
                                                     <rect key="frame" x="0.0" y="0.0" width="139" height="103"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -251,8 +251,8 @@
     </scenes>
     <resources>
         <image name="add" width="64" height="64"/>
+        <image name="beach" width="64" height="64"/>
         <image name="close" width="64" height="64"/>
-        <image name="inspectorbig" width="64" height="64"/>
         <image name="pointer" width="64" height="64"/>
     </resources>
 </document>

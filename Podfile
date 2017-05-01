@@ -7,6 +7,8 @@ target 'GeoBork' do
 
   # Pods for GeoBork
 	pod 'GoogleMaps'
+    pod 'Alamofire', '~> 4.4'
+
 
   target 'GeoBorkTests' do
     inherit! :search_paths

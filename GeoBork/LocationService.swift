@@ -72,7 +72,9 @@ class LocationService: NSObject, CLLocationManagerDelegate{
     
     func stopUpdatingLocation() {
         print("Stop Location Updates")
-        self.manager?.stopUpdatingLocation()
+        if let manager = manager{
+            manager.stopUpdatingLocation()
+        }
     }
     
     //MARK: CLLocationManagerDelegate actoins
