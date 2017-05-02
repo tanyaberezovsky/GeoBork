@@ -60,6 +60,10 @@ class MapViewController: UIViewController {
     private func setLocationService(){
         locationService.myDelegate = self
     }
+    
+    @IBAction func unwindToMap(segue:UIStoryboardSegue){
+        self.locationService.startUpdatingLocation()
+    }
 }
 
 extension MapViewController: LocationServiceDelegate{

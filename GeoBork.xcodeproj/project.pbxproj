@@ -27,6 +27,7 @@
 		23A5532C1E8ED7E300002134 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5532B1E8ED7E300002134 /* LocationManager.swift */; };
 		23B1AD6B1E2E069C003DED2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1AD6A1E2E069C003DED2A /* Constants.swift */; };
 		23B1AD9E1E2E15F1003DED2A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1AD9D1E2E15F1003DED2A /* MapViewController.swift */; };
+		23F7FB3D1EB869EF00CC1791 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7FB3C1EB869EF00CC1791 /* GreenViewController.swift */; };
 		B3D32BAA798D6FA0415AD824 /* Pods_GeoBork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44D18B493AEF8AD6D6A03B9 /* Pods_GeoBork.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +75,7 @@
 		23A5532B1E8ED7E300002134 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		23B1AD6A1E2E069C003DED2A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		23B1AD9D1E2E15F1003DED2A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		23ED39681EAB8A8900AD91B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23F7FB3C1EB869EF00CC1791 /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		2C291B0B1EB86E68919583F3 /* Pods-GeoBorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoBorkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoBorkTests/Pods-GeoBorkTests.release.xcconfig"; sourceTree = "<group>"; };
 		604CC764C746E620F2DFD8DB /* Pods-GeoBorkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoBorkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoBorkTests/Pods-GeoBorkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6662A3C54D59D28EF08CEC36 /* Pods-GeoBorkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoBorkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoBorkUITests/Pods-GeoBorkUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +204,7 @@
 				23A5531E1E89932F00002134 /* LocationSelectorViewController.swift */,
 				23A553241E8AD3F600002134 /* BorkCollectionViewCell.swift */,
 				23A553261E8AD44900002134 /* BorkViewController.swift */,
+				23F7FB3C1EB869EF00CC1791 /* GreenViewController.swift */,
 			);
 			name = Controlers;
 			sourceTree = "<group>";
@@ -537,6 +539,7 @@
 				23A553251E8AD3F600002134 /* BorkCollectionViewCell.swift in Sources */,
 				23B1AD6B1E2E069C003DED2A /* Constants.swift in Sources */,
 				238BAE8E1E9CFE560051F8AB /* ApiManager.swift in Sources */,
+				23F7FB3D1EB869EF00CC1791 /* GreenViewController.swift in Sources */,
 				23A553271E8AD44900002134 /* BorkViewController.swift in Sources */,
 				23A5531D1E89921500002134 /* LocationService.swift in Sources */,
 				23A5532A1E8AE21F00002134 /* BorkOld.swift in Sources */,
@@ -583,7 +586,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				23A17BA41E2D70F2008005E7 /* Base */,
-				23ED39681EAB8A8900AD91B3 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

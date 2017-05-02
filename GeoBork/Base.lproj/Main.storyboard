@@ -28,7 +28,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQI-K0-h5V">
-                                <rect key="frame" x="267" y="444" width="80" height="80"/>
+                                <rect key="frame" x="267" y="443.5" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Ujx-O6-l00"/>
                                     <constraint firstAttribute="width" constant="80" id="rWH-tF-HgM"/>
@@ -217,7 +217,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointer" translatesAutoresizingMaskIntoConstraints="NO" id="okw-7O-yix">
-                                <rect key="frame" x="156" y="279" width="64" height="110"/>
+                                <rect key="frame" x="155.5" y="278.5" width="64" height="110"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="myE-qh-CyO"/>
@@ -242,9 +242,11 @@
                         <outlet property="btnContinue" destination="tw9-Wm-FOT" id="5y6-zS-rLw"/>
                         <outlet property="mapView" destination="c6o-OK-7Ez" id="6MU-Ee-bwU"/>
                         <outlet property="markerImage" destination="okw-7O-yix" id="xYe-ZU-QWv"/>
+                        <segue destination="Drf-jo-lPz" kind="unwind" identifier="toMap" unwindAction="unwindToMapWithSegue:" id="tIV-QD-Htj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L0Q-8u-HqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Drf-jo-lPz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1736.8" y="138.98050974512745"/>
         </scene>

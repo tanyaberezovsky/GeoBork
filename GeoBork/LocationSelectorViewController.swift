@@ -70,12 +70,15 @@ class LocationSelectorViewController: UIViewController {
     @IBAction func addMarker(_ sender: Any) {
         requestCreateBork(location: newLocation)
         delegateMap?.reloadMap()
-        self.dismiss(animated: true, completion: nil)
+        returnToMap()
     }
     
     @IBAction func cancel(_ sender: Any) {
-        //self.parent!.dismiss(animated: true, completion: nil)
-        self.dismiss(animated: true, completion: nil)
+        returnToMap()
+    }
+    
+    func returnToMap(){
+        performSegue(withIdentifier: "toMap", sender: self)
     }
 }
 
