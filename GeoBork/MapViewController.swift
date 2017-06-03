@@ -13,6 +13,7 @@ import GoogleMaps
 protocol MapListener {
     func reloadMap()
 }
+
 protocol UIDefinitionProtocol{
     func LoadMapsComponents()
     func LoadGeneralComponents()
@@ -54,8 +55,14 @@ class MapViewController: UIViewController {
         //btnContinue.setTitle(NSLocalizedString("CONTINUEWITHCURRENLOCATION", comment: ""), for: .normal)
     }
     private func defineGoogleMap(){
+        
         self.mapView.delegate = self
         
+        // GOOGLE MAPS SDK: COMPASS 
+        mapView.settings.compassButton = true
+        // GOOGLE MAPS SDK: USER'S LOCATION 
+        mapView.isMyLocationEnabled = true
+        mapView.settings.myLocationButton = true
     }
     private func setLocationService(){
         locationService.myDelegate = self
@@ -92,6 +99,7 @@ extension MapViewController{
         }
     }
 }
+
 extension MapViewController: GMSMapViewDelegate{
     func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
         newLocation = CLLocation(latitude: position.target.latitude, longitude: position.target.longitude)

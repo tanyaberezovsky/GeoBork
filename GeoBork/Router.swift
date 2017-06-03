@@ -32,7 +32,7 @@ enum Router: URLRequestConvertible {
     case updateUser(username: String, parameters: Parameters)
     case destroyUser(username: String)
     
-    static let baseURLString = "http://95.85.60.200:3000/v1/"
+    static let baseURLString = "http://geobork.gregory.beer:3000/v1/"
     
     var method: HTTPMethod {
         switch self {

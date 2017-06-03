@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  GeoBork
+
+  Created by Tania on 09/05/2017.
+  Copyright © 2017 Tania Berezovski. All rights reserved.
+*/
+parkbig = "Dog Area";
+inspectorbig = "Inspector";
+CONTINUEWITHCURRENLOCATION = "ADD TO MAP";
+CANCEL="CANCEL";

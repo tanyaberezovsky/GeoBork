@@ -121,8 +121,7 @@ extension LocationService {
     }
     
     func formatAddressFromPlacemark(placemark: CLPlacemark) -> String {
-        return (placemark.addressDictionary!["FormattedAddressLines"] as!
-            [String]).joined(separator: ", ")
+        return (placemark.addressDictionary!["FormattedAddressLines"] as! [String])[0]//(placemark.addressDictionary!["FormattedAddressLines"] as! [String]).joined(separator: ", ")
     }
 }
 

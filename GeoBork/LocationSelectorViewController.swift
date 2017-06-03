@@ -17,6 +17,7 @@ class LocationSelectorViewController: UIViewController {
     
     @IBOutlet weak var btnContinue: UIButton!
     
+    @IBOutlet weak var btnCancel: UIButton!
     @IBOutlet weak var markerImage: UIImageView!
     
     @IBOutlet weak var address: UILabel!
@@ -65,6 +66,7 @@ class LocationSelectorViewController: UIViewController {
  
     private func translateScreenCaptions(){
         btnContinue.setTitle(NSLocalizedString("CONTINUEWITHCURRENLOCATION", comment: ""), for: .normal)
+        btnCancel.setTitle(NSLocalizedString("CANCEL", comment: ""), for: .normal)
     }
     
     @IBAction func addMarker(_ sender: Any) {

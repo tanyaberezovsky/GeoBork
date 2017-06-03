@@ -56,7 +56,7 @@ extension BorkViewController:UICollectionViewDataSource{
         let name = self.items[indexPath.item + remainder]
         
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
-        cell.myLabel.text = name
+        cell.myLabel.text = NSLocalizedString(name, comment: "")
         cell.myImage.image = UIImage(named: name)
         
         return cell
@@ -91,9 +91,12 @@ extension BorkViewController : UICollectionViewDelegateFlowLayout {
             let offset = (screenWight / 2) - 70
             sectionInsets = UIEdgeInsets(top: 50, left: offset, bottom: 20, right: offset)
         } else {
-            sectionInsets = UIEdgeInsets(top: 50, left: 20.0, bottom: 0, right: 20.0)
+            
+            sectionInsets = UIEdgeInsets(top: 50, left: 20, bottom: 0, right: 20.0)
         }
         
         return sectionInsets
     }
+           // self.borkCollectionView.reloadData()
+    
 }

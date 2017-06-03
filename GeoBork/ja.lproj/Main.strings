@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "24M-Au-Dui"; */
+"24M-Au-Dui.normalTitle" = "Button";
+
+/* Class = "UIViewController"; title = "inspectors"; ObjectID = "e8d-eN-YiD"; */
+"e8d-eN-YiD.title" = "inspectors";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hdq-1u-iXG"; */
+"hdq-1u-iXG.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "CANCEL"; ObjectID = "lVG-FN-mos"; */
+"lVG-FN-mos.normalTitle" = "CANCEL";
+
+/* Class = "UIButton"; normalTitle = "ADD TO MAP"; ObjectID = "tw9-Wm-FOT"; */
+"tw9-Wm-FOT.normalTitle" = "ADD TO MAP";
+
+/* Class = "UILabel"; text = "address"; ObjectID = "ydf-ON-yrz"; */
+"ydf-ON-yrz.text" = "address";

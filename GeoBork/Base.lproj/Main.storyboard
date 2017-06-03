@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -71,7 +71,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Sd-3M-5pe">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Sd-3M-5pe">
                                 <rect key="frame" x="16" y="100" width="343" height="487"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="w9w-Gs-vBY">
@@ -125,11 +125,11 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24M-Au-Dui">
-                                <rect key="frame" x="329" y="28" width="30" height="30"/>
+                                <rect key="frame" x="319" y="28" width="40" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="5zm-jJ-zp3"/>
-                                    <constraint firstAttribute="width" constant="30" id="QMo-UY-Wrm"/>
+                                    <constraint firstAttribute="height" constant="40" id="5zm-jJ-zp3"/>
+                                    <constraint firstAttribute="width" constant="40" id="QMo-UY-Wrm"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="close">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -179,7 +179,7 @@
                                 <rect key="frame" x="0.0" y="539" width="375" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw9-Wm-FOT">
-                                        <rect key="frame" x="45" y="27" width="284" height="30"/>
+                                        <rect key="frame" x="45" y="28" width="284" height="30"/>
                                         <color key="backgroundColor" red="0.29411765933036804" green="0.5372549295425415" blue="0.90980392694473267" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="ADD TO MAP">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -189,14 +189,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVG-FN-mos">
-                                        <rect key="frame" x="45" y="90" width="284" height="30"/>
+                                        <rect key="frame" x="45" y="83" width="284" height="30"/>
                                         <state key="normal" title="CANCEL"/>
                                         <connections>
                                             <action selector="cancel:" destination="tqV-sk-5LP" eventType="touchUpInside" id="UAd-Eg-0Xd"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydf-ON-yrz">
-                                        <rect key="frame" x="0.0" y="1" width="375" height="18"/>
+                                        <rect key="frame" x="0.0" y="2" width="375" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.22309248096446699" green="0.22309248096446699" blue="0.22309248096446699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -211,9 +211,9 @@
                                     <constraint firstItem="tw9-Wm-FOT" firstAttribute="leading" secondItem="fdg-sI-tRH" secondAttribute="leading" constant="45" id="HmF-ZW-7J2"/>
                                     <constraint firstItem="tw9-Wm-FOT" firstAttribute="top" secondItem="ydf-ON-yrz" secondAttribute="bottom" constant="8" id="La5-Vf-UsK"/>
                                     <constraint firstItem="lVG-FN-mos" firstAttribute="leading" secondItem="fdg-sI-tRH" secondAttribute="leading" constant="45" id="MCt-EM-w9Y"/>
-                                    <constraint firstAttribute="bottom" secondItem="lVG-FN-mos" secondAttribute="bottom" constant="8" id="WJ5-Li-cjB"/>
+                                    <constraint firstAttribute="bottom" secondItem="lVG-FN-mos" secondAttribute="bottom" constant="15" id="WJ5-Li-cjB"/>
                                     <constraint firstAttribute="trailing" secondItem="lVG-FN-mos" secondAttribute="trailing" constant="46" id="czf-t1-Tqq"/>
-                                    <constraint firstItem="lVG-FN-mos" firstAttribute="top" secondItem="tw9-Wm-FOT" secondAttribute="bottom" constant="33" id="zbP-UK-Bay"/>
+                                    <constraint firstItem="lVG-FN-mos" firstAttribute="top" secondItem="tw9-Wm-FOT" secondAttribute="bottom" constant="25" id="zbP-UK-Bay"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointer" translatesAutoresizingMaskIntoConstraints="NO" id="okw-7O-yix">
@@ -239,6 +239,7 @@
                     </view>
                     <connections>
                         <outlet property="address" destination="ydf-ON-yrz" id="aeY-WC-rDW"/>
+                        <outlet property="btnCancel" destination="lVG-FN-mos" id="kJf-SC-x5g"/>
                         <outlet property="btnContinue" destination="tw9-Wm-FOT" id="5y6-zS-rLw"/>
                         <outlet property="mapView" destination="c6o-OK-7Ez" id="6MU-Ee-bwU"/>
                         <outlet property="markerImage" destination="okw-7O-yix" id="xYe-ZU-QWv"/>
